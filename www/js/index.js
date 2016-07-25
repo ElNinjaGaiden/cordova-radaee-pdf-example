@@ -15,12 +15,12 @@ var app = {
             'click',
             function(e) {
                 RadaeePDFPlugin.openFromAssets({
-                    url: 'www/kickstart.pdf',
+                    url: 'www/fdk_takeoff_minimums.pdf',
                     password: ''
                 }, function(message) {
                     console.log('Success: ' + message);
                 }, function(err) {
-                    console.log('Failure: ' + err);
+                    console.log('Failure: ', err);
                 });          
             }
         );
